@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Fluid Simulation</title>
+    <link rel="stylesheet" href="overlay.css">
+</head>
+<body>
+    <div id="overlay">
+        <h2>Settings</h2>
+        <label for="fluid-density">Fluid Density:</label>
+        <input type="range" id="fluid-density" min="0" max="100" value="50">
+        <span id="fluid-density-value">50%</span>
+        <br>
+        <label for="viscosity">Viscosity:</label>
+        <input type="range" id="viscosity" min="0" max="100" value="50">
+        <span id="viscosity-value">50%</span>
+        <br>
+        <button id="reset-settings">Reset</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/controls/PointerLockControls.js"></script>
+    <script src="renderer.js"></script>
+    <script src="controls.js"></script>
+    <script src="overlay.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
